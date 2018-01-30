@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Unit 9 Project</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Siemreap' rel='stylesheet'>
+</head>
+<body>
+	<div class="top-title">
+		<h1>Monk's Cafe</h1>
+		<h3>"The Coffee Shop"</h3> 
+	</div>
+	<hr>
+	<div class="images">
+		<img class="main-image" src="images/toms-restaurant.jpg" alt="Monk's Cafe Store Front" style="width:80%;height:400px;border:0;"> 
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Reservations</h2><br>
+		</div>
+		<div class="col-md-4" id="reservations">
+			<h3>Make a Reservation</h3><br>
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label for="inputName" class="col-sm-4 control-label">Name</label>
+					<div class="col-sm-6">
+						<input type="text" class="form-control" id="inputName" placeholder="First & Last Name">
+					</div>
+				</div>
+					<div class="form-group">
+						<label for="inputDay" class="col-sm-4 control-label">Day</label>
+					<div class="col-sm-6">
+						<input type="text" class="form-control" id="inputDay" placeholder="Ex: Monday">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-15">
+						<button type="submit" class="btn btn-default">Confirm</button>
+					</div>
+				</div>
+			</form>
+		</div>
+			<div class="col-md-4" id="existing-reservations">
+				<h3>Existing Reservations</h3><br>
+				<table class="table table-bordered">
+					<tr>
+						<th>Name</th>
+						<th>Day</th>
+					</tr>
+					<tr>
+					</tr>
+				</table>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<h2>Come Dine with Us</h2><br>
+		<div id="map"></div>
+		<script>
+			function myMap(){
+				var map = new google.maps.Map(document.getElementById('map'), {
+					center: {lat: 40.8054491, lng: -73.9654415},
+					zoom: 11
+				});
+				var marker = new google.maps.Marker({
+					position: {lat: 40.8054491, lng: -73.9654415},
+					map: map
+				});
+			};
+		</script>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Customer Reviews</h2><br>
+		</div>
+		<div class="col-md-6">
+			<img class="review-image" src="images/jerry.jpg" alt="Customer Review" style="width:325px;height:200px;border:0;"> 
+		</div>
+		<div class="col-md-6">
+			<blockquote class="quote">
+				<p>“Big lettuce, big carrots, tomatoes like volleyballs.”
+				</p>
+				<footer>Jerry Seinfeld, on The BIG Salad</footer>
+			</blockquote>
+		</div>
+	</div>
+	<hr>
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCT3ktPaxKVgNNTJn8SE1UOu4gzl2quCUU&callback=myMap"></script>
+</body>

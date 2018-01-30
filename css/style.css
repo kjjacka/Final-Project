@@ -1,0 +1,65 @@
+body {
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	font-family: 'Siemreap';
+}
+
+h1 {
+	text-decoration: underline;
+	text-decoration-color: black;
+	text-decoration-style: solid;
+}
+
+#map {
+	height: 400px;
+	width: 50%;
+	position: relative;
+	margin-left: 360px;
+}
+
+#existing-reservations {
+	position: relative;
+	margin-left: 150px;
+}
+
+.col-md-12{
+	background-color: white;
+}
+
+.col-md-4{
+	position: relative;
+	margin-left: 150px;
+}
+
+.main-image {
+	border-radius: 2%;
+	position: relative;
+}
+
+.main2-image {
+	border-radius: 3%;
+}
+
+.review-image {
+	position: relative;
+	margin-left: 300px;
+}
+
+.quote {
+	position: relative;
+	margin-right: 300px;
+}
+
+th {
+	width: 150px;
+}
+
+.row {
+	margin-bottom: 100px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
