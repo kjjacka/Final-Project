@@ -33,7 +33,6 @@ $('.reservation-form').on('submit', function(event){
   var reservationsReference = database.ref('reservations');
   
   reservationsReference.push(reservationData);
-  
 });
 
 function getReservations(){
@@ -58,3 +57,4 @@ function getReservations(){
 }
 
 getReservations();
+

@@ -34,6 +34,7 @@ h2, h3 {
 .reservation-columns{
 	position: relative;
 	margin-left: 10%;
+	text-align: center;
 }
 
 #right-side {
@@ -53,9 +54,6 @@ h2, h3 {
 	position: relative;
 }
 
-.main2-image {
-	border-radius: 3%;
-}
 
 .review-image {
 	position: relative;
@@ -69,9 +67,6 @@ h2, h3 {
 	margin:auto;
 }
 
-.day-title {
-	margin-left: 15%;
-}
 
 td {
 	text-decoration: underline;
@@ -80,7 +75,7 @@ td {
 	border: 1px solid black;
 }
 
-tr:hover {background-color: white;}
+tr:hover {background-color: #edd2c4;}
 
 .row {
 	margin-bottom: 100px;
