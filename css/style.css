@@ -1,7 +1,12 @@
 body {
 	text-align: center;
-	background-color: rgb(255, 255, 255);
+	background-image: linear-gradient(#f9f0eb, #edd2c4);
 	font-family: 'Siemreap';
+	margin-top: 60px;
+}
+
+header {
+	border: 5px solid white;
 }
 
 h1 {
@@ -12,23 +17,34 @@ h1 {
 
 #map {
 	height: 400px;
-	width: 50%;
+	width: 95%;
 	position: relative;
-	margin-left: 360px;
+	text-align: center;
+	margin: auto;
 }
+
 
 #existing-reservations {
 	position: relative;
 	margin-left: 150px;
 }
 
-.col-md-12{
-	background-color: white;
-}
 
 .col-md-4{
 	position: relative;
 	margin-left: 150px;
+}
+#right-side {
+	position: relative;
+	text-align: right;
+	margin-right:300px;
+
+}
+
+#left-side{
+	position: relative;
+	text-align: left;
+	margin-left:300px;
 }
 
 .main-image {
@@ -42,17 +58,28 @@ h1 {
 
 .review-image {
 	position: relative;
-	margin-left: 300px;
+	text-align: center;
+	margin: auto;
 }
 
 .quote {
 	position: relative;
-	margin-right: 300px;
+	text-align: center;
+	margin:auto;
 }
 
-th {
-	width: 150px;
+#choice option { color: black; }
+
+.empty { color: gray; }
+
+td {
+	text-decoration: underline;
+	text-align: left; 
+	padding: 5px;
+	border: 1px solid black;
 }
+
+tr:hover {background-color: white;}
 
 .row {
 	margin-bottom: 100px;
@@ -60,6 +87,6 @@ th {
 
 hr {
     border: 0;
-    border-top: 1px solid #eee;
+    border-top: 2px solid white;
     margin: 20px 0;
 }
