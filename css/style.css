@@ -5,14 +5,15 @@ body {
 	margin-top: 60px;
 }
 
-header {
-	border: 5px solid white;
-}
-
 h1 {
 	text-decoration: underline;
 	text-decoration-color: black;
 	text-decoration-style: solid;
+	font-family: 'Bungee Inline';
+}
+
+h2, h3 {
+	font-family: 'Bungee Inline';
 }
 
 #map {
@@ -30,21 +31,21 @@ h1 {
 }
 
 
-.col-md-4{
+.reservation-columns{
 	position: relative;
-	margin-left: 150px;
+	margin-left: 10%;
 }
+
 #right-side {
 	position: relative;
 	text-align: right;
-	margin-right:300px;
-
+	margin-right:25%;
 }
 
 #left-side{
 	position: relative;
 	text-align: left;
-	margin-left:300px;
+	margin-left:25%;
 }
 
 .main-image {
@@ -68,9 +69,9 @@ h1 {
 	margin:auto;
 }
 
-#choice option { color: black; }
-
-.empty { color: gray; }
+.day-title {
+	margin-left: 15%;
+}
 
 td {
 	text-decoration: underline;

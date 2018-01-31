@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Siemreap' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Bungee Inline' rel='stylesheet'>
 </head>
 <body>
 	<header>
@@ -21,7 +22,7 @@
 		<div class="col-md-12">
 			<h2>Reservations</h2><br>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-4 reservation-columns">
 			<h3>Make a Reservation</h3><br>
 			<div class="row text-center">
 				<form class="form-inline reservation-form">
@@ -45,9 +46,9 @@
   			</div>
 		</div>
 		<div class="col-md-4" id="existing-reservations">
-			<h3>Existing Reservations</h3><br>
+			<h3>Existing Reservations</h3>
 			<h4 class="col-md-2">Name</h4>
-			<h4 class="col-md-4">Day</h4>
+			<h4 class="col-md-4 day-title">Day</h4>
 			<table class="table table-bordered reservations">
 				<tbody class="reservation-list"></tbody>
 			</table>
@@ -61,7 +62,7 @@
 	</div>
 	<hr>
 	<div class="row">
-		<h2>Come Dine with Us</h2><br>
+		<h2>Come Dine with Us!</h2><br>
 		<div id="map"></div>
 		<script>
 			function myMap(){
